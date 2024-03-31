@@ -9,9 +9,9 @@ def index(request):
     return render(request, "newyear/index.html", {
         
         # this below code give the output NO
-        # "newyear":now.month ==  1 and now.day == 1
+        "newyear":now.month ==  1 and now.day == 1
         
         # this below code give the output YES
-        "newyear": True
+        # "newyear": True
     })
     
