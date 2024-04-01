@@ -1,20 +1,9 @@
-{% load static %}
-
-<!DOCTYPE html>
-<html>
-    <head>
-
-        <title>Tasks</title>
-        <link rel="stylesheet"  href="/static/newyear/styles.css">   
-
-    </head>
-    <body>
-        <ul>
-            {% for task  in Tasks %}
-               <li>{{task}}</li>
-            {% endfor %}
-
-        </ul>
-
-    </body>
-</html>
+{% extends "tasks/layout.html" %}
+{% block body %}
+<h1>Tasks</h>
+    <ul>
+        {% for task in tasks %}
+            <li>{{task}}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
